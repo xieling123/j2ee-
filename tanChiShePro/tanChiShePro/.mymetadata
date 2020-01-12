@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="tanChiShePro"
+  id="myeclipse.1577419868127"
+  context-root="/tanChiShePro"
+  j2ee-spec="5.0"
+  archive="tanChiShePro.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,22 @@
+/*svg-tips公共样式*/
+.svg-tips {
+	border: 2px solid #188BCE;
+	background: #fff;
+	z-index: 9999;
+	position: absolute;
+	opacity: 1;
+	display: none;
+	overflow: hidden;
+	padding:0 10px;
+}
+
+.h5Style{margin:12px 0px!important;color:#188BCE;}
+.table{margin-bottom:5px!important;}
+.svg-tips h5{border-bottom:1px solid #188BCE!important;margin:5px 12px 5px 0px!important;width:200px;padding:10px;}
+.table tr td{padding-bottom:4px;}
+.table tr td:nth-child(1){text-align: right!important;width:97px!important;vertical-align:top!important;}
+.table tr td:nth-child(3){text-align: right!important;width:85px!important;vertical-align:top!important;}
+.table tr td:nth-child(5){text-align: right!important;width:91px!important;vertical-align:top!important;}
+.table tr td:nth-child(2){text-align: left!important;width: 97px!important;vertical-align:top!important;}
+.table tr td:nth-child(4){text-align: left!important;width: 85px!important;vertical-align:top!important;}
+.table tr td:nth-child(6){text-align: left!important;width: 91px!important;vertical-align:top!important;}

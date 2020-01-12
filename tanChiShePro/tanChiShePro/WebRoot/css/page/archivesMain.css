@@ -1,0 +1,7 @@
+.titleBox{height:50px;background-color:#FFFFFF;border:1px solid #BBBBBA;line-height:46px}
+.atrContent{overflow:hidden;margin:0px 15px 0px 15px;}
+.floatRight{float:right!important}
+.floatLeft{float:left!important}}
+.inputHeight{height: 34px!important}
+/*必填项样式*/
+.tips{color: red;margin-left:10px;}

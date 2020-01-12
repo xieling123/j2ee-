@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:cache="http://www.springframework.org/schema/cache"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/cache
+        http://www.springframework.org/schema/cache/spring-cache-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+        
+    <!-- 自动扫描 -->
+    <context:component-scan base-package="com.para"/>  
+
+    <!-- 1 数据库数据源 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+        init-method="init" destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/tanchishe" />  
+        <!-- 指定连接数据库的用户名 -->  
+        <property name="username" value="root" />  
+        <!-- 指定连接数据库的密码 -->  
+        <property name="password" value="root" />  
+        <!-- 基本属性 url、user、password -->
+<!--        <property name="url" value="jdbc:sqlserver://127.0.0.1:1433;database=ydpara;integratedSecurity=false;" />-->
+<!--        <property name="username" value="sa" />-->
+<!--        <property name="password" value="123456" />-->
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="10" />
+        <property name="minIdle" value="10" />
+        <property name="maxActive" value="150" />
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="1000" />
+
+        <property name="removeAbandoned" value="true"></property>
+        <property name="removeAbandonedTimeout" value="180"></property>
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="false" />
+        <property name="maxPoolPreparedStatementPerConnectionSize"
+            value="100" />
+
+        <!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
+        <property name="filters" value="stat" />
+    </bean>
+
+    <!-- 2  配置sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:config/mybatis-configuration.xml"/>
+    </bean>
+        
+    <!-- 3 mybatis自动扫描加载sql的映射文件/接口 MapperScannerConfigurer
+           basePackage :指定sql映射文件/接口所在的包(自动扫描)
+     -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.para.mapper"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean> 
+    
+    <!-- 4 事务管理 dataSourceTransactionManager dataSource:引用上面定义的数据源  -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+        
+    <!-- 5 使用声明式事务 transaction-manager：引用上面定义的事务管理器-->
+    <tx:annotation-driven transaction-manager="txManager"/>         
+    
+    <!--6 多部分文件上传 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+         <!-- 100M -->
+         <property name="maxUploadSize" value="104857600" />
+         <property name="maxInMemorySize" value="4096" />
+         <property name="defaultEncoding" value="UTF-8"></property>
+    </bean> 
+    
+    <!--7 配置EhCache缓存管理器 -->
+    <cache:annotation-driven cache-manager="cacheManager"/>
+    <bean id="cacheFactory" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+        <property name="configLocation" value="classpath:config/ehcache.xml"/>
+    </bean>
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+        <property name="cacheManager" ref="cacheFactory"/>
+    </bean>
+    
+    <!-- 8 配置调度器 -->
+<!--    <import resource="classpath:config/Quertz.xml"/>-->
+</beans>

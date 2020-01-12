@@ -1,0 +1,68 @@
+/*头部*/
+top{width:100%;height:30px;background:#f9f9f9;display:block;border-bottom:1px solid #f3f3f3; position:relative; z-index:10000}
+.seck{width:1200px;height:30px;margin:0 auto}
+.dis_add{width:120px;height:30px; font-size:12px;color:#666;line-height:30px;position:relative; float:left}
+.dis_add span{cursor:pointer}
+.dis_add img{ transition:0.3s}
+.dis_add:hover span{color:#eb4e01}
+.dis_add:hover img{ transform:rotate(180deg)}
+.hide_add{position:absolute;left:0;top:30px;width:314px; height:auto;background:#fff; overflow:hidden;border:1px solid #f3f3f3; padding-bottom:6px;display:none; z-index:4000}
+.hide_add ul{ width:285px;height:auto; margin:0 auto; overflow:hidden}
+.hide_add ul li{ float:left}
+.hide_add ul li a{display:block; padding-left:8px; padding-right:8px; line-height:24px; font-size:12px; color:#666; margin-top:6px; margin-right:6px; margin-left:8px}
+.hide_add ul li a:hover{background:#f9f9f9;color:#eb4e01}
+.hide_add ul li a.selected{ background:#eb4e01;color:#fff}
+.register_login{ height:30px; float:left; line-height:30px}
+.register_login em{ font-size:12px; color:#666}
+.register_login a{ font-size:12px; color:#666;padding-left:6px;padding-right:6px}
+.register_login a:hover{color:#eb4e01}
+.vip_center{ height:30px; float:right; line-height:30px}
+.vip_center a{ font-size:12px; color:#666;padding-left:6px;padding-right:6px}
+.vip_center a:hover{ color:#eb4e01}
+/*header*/
+header{ width:1200px; height:54px; margin:0 auto; overflow:hidden; margin-top:10px}
+.logo{display:block; width:302px;height:46px;float:left; margin-top:4px;overflow:hidden}
+.logo img{display:block}
+search{display:block; width:508px;height:30px; background:#f5f5f5; border-radius:15px; float:left; overflow:hidden; margin-top:15px;border:2px solid #000}
+search button{width:68px;height:30px; background:#000;color:#fff;cursor:pointer; font-size:14px}
+search button:hover{ background:#eb4e01}
+.sping_car{width:100px; height:30px;float:left; margin-top:18px; margin-left:83px;color:#666; overflow:hidden}
+.sping_car b{display:block; float:left; width:15px;height:15px; margin-top:8px; overflow:hidden; background:url(../images/shopping_cart.png) no-repeat center}
+.sping_car em{font-size:14px;color:#666; line-height:30px; margin-left:3px; transition:0.1;cursor:pointer}
+.sping_car:hover em{color:#eb4e01}
+.sping_car:hover b{ background:url(../images/shopping_cart1.png) no-repeat center}
+/*导航*/
+.dao_hang{width:100%;height:30px;background:#000; margin-top:12px}
+.dao_hang.fixed_dh{position:fixed; top:0; z-index:7000; margin-top:0; box-shadow:0 2px 6px rgba(0,0,0,0.2)}
+.dao_hang nav{width:1200px;height:30px;margin:0 auto; position:relative}
+.dao_hang nav .important{display:block; width:210px; height:30px; background:#cc2c02; color:#fff; font-size:16px; line-height:30px;cursor:pointer; float:left;position:relative}
+.dao_hang nav .important img{display:block;float:left; margin-left:43px}
+.dao_list{ float:left; height:30px; margin-left:15px; perspective:100px}
+.dao_list a{ display:block; float:left; font-size:16px;color:#fff; padding-left:15px; padding-right:15px; line-height:30px; height:30px; position:relative; margin-right:10px}
+.dao_list a:hover{ background:#cc2c02}
+.dao_list a.color{ background:#cc2c02; color:#fff}
+aside{ width:210px; height:500px; background:rgba(255,255,255,1); position:absolute;top:-480px; left:0;display:none; z-index:2000; opacity:0; box-shadow:0 0 6px rgba(0,0,0,0.3)}
+.import_list{ box-shadow:0 0 6px rgba(0,0,0,0.3)}
+aside ul li.yanses{ background:rgba(235,78,1,0.2)} 
+.important:hover aside{display:block}
+aside ul li{ overflow:hidden; margin-top:10px}
+aside ul li.li_color{ background:}
+aside ul li h3{ font-size:14px; color:#000; text-indent:10px; font-weight:100; height:30px; line-height:30px}
+aside ul li p{display:block; width:200px; height:auto;margin-left:10px}
+aside ul li p a{ display:block; font-size:14px; line-height:20px; float:left; padding-right:10px;color:#666}
+aside ul li p a:hover{color:#eb4e01}
+.import_list{ width:729px; height:498px; position:absolute; top:30px; left:210px;display:none; background:#FFF; z-index:3000}
+.import_list dt{ font-size:14px; color:#000; line-height:30px;height:30px; margin-top:7px; text-indent:20px}
+.import_list dd{ margin-left:20px; border-bottom:1px dashed #f3f3f3}
+.import_list dd a{ font-size:14px; color:#666; padding-left:6px; padding-right:6px}
+.import_list dd a:hover{ color:#eb4e01}
+.advertisement{ width:250px; height:500px; position:absolute; top:-480px;right:0; z-index:3000;background:#fff; opacity:0}
+.advertisement h4{ font-size:14px; color:#333; font-weight:100; line-height:50px; border-bottom:1px dashed #cccccc; width:230px; margin:0 auto}
+.notice_new{ width:230px; height:230px;margin:0 auto}
+.notice_new a{ font-size:14px; display:block; width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#666; line-height:30px; transition:0.6s}
+.notice_new p{ display:block; width:230px; height:30px; margin:0 auto; overflow:hidden; perspective:1200px}
+.notice_new p:hover a{color:#e60012; margin-left:6px;transform:rotatex(360deg)}
+.notice_img{ width:230px; height:219px; margin:0 auto; box-shadow:0 0 2px rgba(0,0,0,0.2); perspective:1200px}
+.notice_img img{ display:block; width:230px; height:219px; transition:1.6s; position:absolute; top:0; left:0}
+.img2{transform:rotateY(90deg)}
+.notice_img:hover img{ transform:rotateY(360deg)}

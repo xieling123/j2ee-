@@ -1,0 +1,68 @@
+/*html5声明*/
+header, section, footer, aside, nav, main, article, figure {display: block}
+img{display:block}
+*{margin:0; padding:0; list-style:none; border:0; text-decoration:none; font-style:normal}
+body{ font-family:myfont,"微软雅黑"}
+html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;}    
+@font-face{font-family:myfont; src:url(../font/fzjt.ttf),url('msyh.tff'),url('msyhbd.tff'); /* IE9 */}
+/* 侧边fixed */
+.toolbar-item,.toolbar-layer{background:url(../images/toolbar.png) no-repeat;}
+.toolbar{position:fixed;right:0px;bottom:50px;}/*假设网页宽度为1200px，导航条在右侧悬浮*/
+.toolbar-item{display:block;width:52px;height:52px;margin-top:1px;position:relative;-moz-transition:background-position 0.5s;-ms-transition:background-position 0.5s;-o-moz-transition:background-position 0.5s;-webkit-moz-transition:background-position 0.5s;transition:background-position 0.5s;}
+.toolbar-item:hover .toolbar-layer{opacity:1;filter:alpha(opacity=100);transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);}
+.toolbar-item-weixin{background-position:0 -798px;}
+.toolbar-item-weixin:hover{background-position:0 -860px;}
+.toolbar-item-weixin .toolbar-layer{height:212px;background-position:0 0;}
+.toolbar-item-feedback{background-position:0 -426px;}
+.toolbar-item-feedback:hover{background-position:0 -488px;}
+.toolbar-item-app{background-position:0 -550px;}
+.toolbar-item-app:hover{background-position:0 -612px;}
+.toolbar-item-app .toolbar-layer{height:194px;background-position:0 0;}
+.toolbar-item-top{background-position:0 -674px;}
+.toolbar-item-top:hover{background-position:0 -736px;}
+.toolbar-layer{position:absolute;right:46px;bottom:-10px;width:172px;opacity:0;filter:alpha(opacity=0);
+transform-origin: 95% 95%;-moz-transform-origin: 95% 95%;-ms-transform-origin: 95% 95%;-o-transform-origin: 95% 95%;-webkit-transform-origin: 95% 95%;transform:scale(0.01);
+-moz-transform:scale(0.01);-ms-transform:scale(0.01);-o-transform:scale(0.01);-webkit-transform:scale(0.01);transition:all 0.5s;-moz-transition:all 0.5s;-ms-transition:all 0.5s;-o-transition:all 0.5s;-webkit-transition:all 0.5s;}
+/*页脚*/
+footer{ width:100%; height:auto; overflow:hidden; background:#f7f7f5; margin-top:100px}
+.foot_in{ width:1200px; height:auto; overflow:hidden; margin:0 auto; margin-top:30px; padding-bottom:40px}
+.foot_in_left{width:918px; height:auto; overflow:hidden; float:left}
+.foot_in_left div{width:153px; height:auto; float:left; overflow:hidden}
+.foot_in_left div h5{color:#333; font-weight:bold; font-size:16px; text-align:center; line-height:30px}
+.foot_in_right div h5{color:#333; font-weight:bold; font-size:16px; text-align:center; line-height:30px}
+.foot_in_left div ul li{height:24px; text-align:center}
+.foot_in_left div ul li a{ font-size:14px; line-height:24px; text-align:center; color:#6c6c6c}
+.foot_in_left div ul li a:hover{ color:#eb4e01}
+.foot_in_right{width:230px;height:auto; overflow:hidden; float:right; text-align:center}
+.foots{ width:100%; height:60px; background:#2b2b2b; overflow:hidden}
+.foots_in{ width:1200px; height:60px; margin:0 auto; overflow:hidden}
+.foots_in em{ float:right; line-height:60px; color:#7d7d7d; font-size:14px}
+.foot_in_right p{ display:block; width:100%; height:auto; overflow:hidden; margin-bottom:12px}
+/*给头部导航添加标志*/
+.dao_list a.mkl{ background:#CC2C02}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

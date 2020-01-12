@@ -1,0 +1,62 @@
+body{background-color:#FFFFFF;}
+.topBox{height:90px;line-height:90px;background-color: #188bce;}
+.logoContainer{height:40px;float:letf;margin-left:38px;}
+.mainDiv{height:calc(100vh - 90px);background-color:#FFFFFF;}
+.mainContent{width:100%;height:99%;background:url(../../images/mainPage.jpg) no-repeat;background-size:100% 100%;}
+.navContent{height:40px;background-color:#188bce;float:right;}
+.commonButton button{border-radius:10px;font-size:18px;font-family:'黑体';width:200px;height:50px;background-color:#CAF2FF;border:1px solid #CAECF7}
+.navContent>ul{overflow:hidden;padding:0;margin:0 auto;list-style-type:none;}
+.navContent>ul>li{float:left;width:150px;text-align: center;height:37px;line-height:37px;}
+.firstMenu{text-decoration:none;font-size:18px;font-family:'黑体';color:white;display:block;line-height:20px;height:20px;border-right:1px solid white;margin-top:17px;}
+
+#ace-settings-container{top:100px !important;}
+.navContent a:visited {background-color:#FFFF85}
+.navContent a:hover,.navContent a:active{text-decoration:none;color:#E77520;}
+.top{top:89px;width:120px;border-radius:0 0 10px 10px !important;background-color:#46ABE5!important;}
+.top li>a{color:white;height:35px;line-height:35px;}
+.top li>a:hover,.top li>a:active{background-color:#188BCE;}
+.top li:last-child>a{border-radius:0 0 10px 10px !important;border-bottom:1px solid #46ABE5;}
+.radius{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+.textcenter{text-align:center}
+.navContent .dropdown-menu{padding:0!important}
+.navContent .dropdown-menu>li>a{margin:0!important}
+.archivesLeft{left:calc(50% - 250px);}
+.archivesLeft >li{border-bottom: 1px solid  #188BCE;}
+.archivesLeft >li:last-child{border-bottom:0px}
+.lossStatisticsLeft{left:calc(100% - 240px);}
+.lossControlLeft{left:calc(100% - 120px)!important;}
+.lossStatisticsLeft>li{border-bottom: 1px solid  #188BCE;}
+.lossStatisticsLeft>li:last-child{border-bottom:0px}
+/*dialog模态窗口*/
+#title{width:300px;margin:3% auto 0;}
+h1{font-size:18px;}
+h6{ font-size:12px; font-weight:normal; color:#333;margin-bottom:10px; }
+h6 a { color:#09c; }
+#wrapper {
+	width:300px;
+	margin:0 auto 50px;
+	background:#f8f8f8;
+	border:1px solid #a3a3a3;
+	padding:20px 20px 50px;
+	border-radius:5px;-moz-border-radius:5px;
+}
+.box{width:210px;margin:10px auto 0;background:#fff;border:1px solid #d3d3d3;padding:10px 20px 15px;}
+.box pre{font-family:"Consolas","Courier New",Courier,mono;font-size:12px;line-height:20px;}
+.box a{width:60px;height:22px;line-height:22px;background:#f0f0f0;border:1px solid #d2d2d2;text-align:center;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;display:block;margin-top:20px;border-radius:2px;cursor:pointer;font-size:13px;color:#09c;}
+.box a:hover{border-color:#fbcb09;color:#c77405;background:#fdf8df;}
+ 
+h3{color:#333;font-size:14px;width:250px;margin:30px auto 0;}
+.hide_box{width:300px;color:#fff;color:#444;background:#fff;box-shadow:1px 2px 2px #555;display:none;}
+.hide_box h4{margin-bottom:0px;height:26px;line-height:26px;overflow:hidden;background:#f7b64b;color:#fff;padding:0 10px;border:1px solid #e78f08;font-size:14px;border-bottom:1px solid #eaa12a;}
+.hide_box h4 a{width:14px;line-height:13px;_line-height:15px;height:13px;font-family:arial;overflow:hidden;display:block;background:#fff;color:#c77405;float:right;text-align:center;text-decoration:none;margin-top:7px;font-size:14px;font-weight:normal;border-radius:2px;_font-size:12px;}
+.hide_box p{padding:20px 10px;font-size:13px;}
+
+/*返回首页*/
+.content-page-top{font-size:14px;min-height:38px !important;height:39px;color: #4C8FBD;}
+.content-page-top span{margin-left: 10px;}
+.content-page-top span a{color: #4C8FBD; cursor: pointer;font-size:15px;}
+.content-page-top span small{color: #393939;font-size:15px;}
+.content-page-top span a.now-page{color:#393939;font-size:15px;font-weight: normal}
+.content-page-top span a.now-page:hover{text-decoration:none;cursor: default;}
+.content-page-top .home-icon{margin-left: 4px; margin-right: 2px; font-size: 20px; position: relative; top: 2px;color:#393939}
+.icon-angle-right{font-size:15px;color:#393939}

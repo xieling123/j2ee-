@@ -1,0 +1,12 @@
+.titleBox{height:50px;background-color:#FFFFFF;border:1px solid #BBBBBA;line-height:46px}
+.atrContent{overflow:hidden;margin:0px 15px 0px 15px;}
+.floatRight{float:right!important}
+.floatLeft{float:left!important}}
+.inputHeight{height: 34px!important}
+.marginTop{margin-top:8px!important;padding:0!important;}
+.labelStyle{display:block;float:left;margin-top:-5px;font-size:14px}
+/*必填项样式*/
+.tips{color: red;margin-left:10px;}
+
+/*表格加上右边框*/
+.ui-jqgrid-view{border-right:1px solid #BBBBBA!important;}

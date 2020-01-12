@@ -1,0 +1,22 @@
+.bao_allssyd{ width:100%; height:auto}
+.fixed_banner{ width:100%; height:600px; background:url(../images/6709a8a42933f.jpg) no-repeat center; background-size:cover}
+.split_line{width:100%;height:40px;background:url(../images/fgx1.png) no-repeat center; margin-bottom:30px}
+.fubao_zsyd{ width:1198px; height:370px; margin:0 auto;margin-bottom:12px; position:relative}
+.fubao_zsyd ul li{ float:left; margin-left:10px; width:386px; height:370px; background:#fff; position:absolute; opacity:0; box-shadow:0 0 2px rgba(0,0,0,0.2); overflow:hidden}
+.fubao_zsyd ul li a img{display:block; width:376px; height:280px; margin:0 auto; margin-top:5px}
+.fubao_zsyd ul li span{display:block; width:376px; height:auto; line-height:30px; font-size:14px; margin:0 auto; color:#eb4e01; font-weight:bold; overflow:hidden}
+.fubao_zsyd ul li span font{ font-weight:100}
+.fubao_zsyd ul li span font:hover{ text-decoration:underline}
+.fubao_zsyd ul li p{ display:block; width:376px; height:auto; margin:0 auto; color:#666}
+.fubao_zsyd ul li p:hover{ text-decoration:underline}
+.fubao_zsyd ul li:nth-child(1n){ top:380px; left:10px}
+.fubao_zsyd ul li:nth-child(2n){ top:390px; left:406px}
+.fubao_zsyd ul li:nth-child(3n){ top:400px; left:802px}
+.bao_allssyd.gai10 .fubao_zsyd ul li:nth-child(1n){ top:0px; opacity:1;transition:0.5s}
+.bao_allssyd.gai10 .fubao_zsyd ul li:nth-child(2n){ top:0px; opacity:1;transition:0.5s 0.3s}
+.bao_allssyd.gai10 .fubao_zsyd ul li:nth-child(3n){ top:0px; opacity:1;transition:0.5s 0.6s}
+/*购物车fly插件*/
+.u-flyer{display: block;width: 100px;height: 100px;position: fixed;z-index: 9999; border:1px solid #eb4e01}
+
+
+

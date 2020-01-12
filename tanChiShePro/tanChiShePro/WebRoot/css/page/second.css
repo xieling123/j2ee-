@@ -1,0 +1,37 @@
+.mainDiv{overflow-y:scroll;}
+.leftDiv{float:left;width:40%;background-color:#FFFFFF}
+.centerDiv{float:left;width:20%;background-color:#FFFFFF}
+.rightDiv{float:left;width:40%;background-color:#FFFFFF}
+.leftDiv ul{
+width:45%;
+height:98%;
+padding:0;
+margin-left:55%;
+list-style-type:none;
+}
+.centerDiv ul{
+width:80%;
+height:98%;
+padding:0;
+margin-left:10%;
+list-style-type:none;
+}
+.rightDiv ul{
+width:55%;
+height:98%;
+padding:0;
+list-style-type:none;
+}
+.leftDiv ul li button,.rightDiv ul li button,.centerDiv ul li button{
+width:200px;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+font-family:'黑体';
+color:purple;
+background-color:white;
+padding:0.2em 0.6em;
+border:1px solid purple;
+}
+.leftDiv ul a:hover,.centerDiv ul a:hover,.rightDiv ul a:hover {background-color:#B4B4F3}
+.leftDiv ul li,.centerDiv ul li,.rightDiv ul li {margin-top:20px;border-radius:10px;}
